@@ -35,8 +35,7 @@ namespace TourAgencyView
                 {
                     VoucherViewModel view = logic.Read(new VoucherBindingModel
                     {
-                        Id =
-                   id.Value
+                        Id = id.Value
                     })?[0];
                     if (view != null)
                     {
@@ -78,7 +77,7 @@ namespace TourAgencyView
         }
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            var form = Container.Resolve<FormVoucherTour>();
+            var form = Container.Resolve<FormVoucherTour>();           
             if (form.ShowDialog() == DialogResult.OK)
             {
                 if (producttours.ContainsKey(form.Id))
