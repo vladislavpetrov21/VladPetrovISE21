@@ -116,12 +116,14 @@
             this.турыToolStripMenuItem.Name = "турыToolStripMenuItem";
             this.турыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.турыToolStripMenuItem.Text = "Туры";
+            this.турыToolStripMenuItem.Click += new System.EventHandler(this.КомпонентыToolStripMenuItem_Click);
             // 
             // путевкиToolStripMenuItem
             // 
             this.путевкиToolStripMenuItem.Name = "путевкиToolStripMenuItem";
             this.путевкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.путевкиToolStripMenuItem.Text = "Путевки";
+            this.путевкиToolStripMenuItem.Click += new System.EventHandler(this.ИзделияToolStripMenuItem_Click);
             // 
             // dataGridViewMain
             // 
@@ -145,7 +147,7 @@
             this.Controls.Add(this.menuStripMain);
             this.MainMenuStrip = this.menuStripMain;
             this.Name = "FormMain";
-            this.Text = "FormMain";
+            this.Text = "Турагенство";
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMain)).EndInit();
